@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>의신 떡방앗간 | 전남 진도 의신면 떡집 · 송편 · 쑥떡 · 가래떡</title>
+<meta name="description" content="전남 진도 의신면의 떡방앗간. 송편 · 쑥떡 · 가래떡, 하나씩 개별 포장한 떡. 월~토 08:00~18:00, 일요일 휴무. 전화 0507-1406-6707." />
+<link rel="canonical" href="https://euisin-sample.lgt3232.workers.dev/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content="의신 떡방앗간" />
+<meta property="og:title" content="의신 떡방앗간 · 전남 진도" />
+<meta property="og:description" content="송편 · 쑥떡 · 가래떡. 하나씩 포장해 싣고 나갑니다." />
+<meta property="og:url" content="https://euisin-sample.lgt3232.workers.dev/" />
+<meta property="og:image" content="https://euisin-sample.lgt3232.workers.dev/og-euisin.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#F5F5F5" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<!-- 시안 도메인 = euisin-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 5곳 치환 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "의신 떡방앗간",
+  "url": "https://euisin-sample.lgt3232.workers.dev/",
+  "image": "https://euisin-sample.lgt3232.workers.dev/og-euisin.jpg",
+  "telephone": "+82-507-1406-6707",
+  "address": { "@type": "PostalAddress", "streetAddress": "의신면 돈지1길 67-1", "addressLocality": "진도군", "addressRegion": "전라남도", "addressCountry": "KR" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "18:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/dgsb412/"]
+}
+</script>
+<style>
+@font-face{ font-family:"ES Head"; font-weight:600 700; font-display:swap; src:url("es-hahmlet.woff2") format("woff2"); }
+@font-face{ font-family:"ES Sans"; font-weight:400 700; font-display:swap; src:url("es-pretendard.woff2") format("woff2"); }
+
+/* 토큰: 쌀떡 흰색(중성) · 먹 · 로고 도장 빨강(실측 계열) */
+:root{
+  --bg:#F5F5F5;
+  --paper:#FFFFFF;
+  --ink:#161616;          /* bg 대비 16.6:1 */
+  --soft:#5C5C5C;         /* bg 대비 6.1:1 */
+  --line:#DADADA;
+  --red:#C0202A;          /* 로고 빨간 원 · bg 대비 5.5:1 · 흰 글자 6.0:1 */
+  --dark:#161616;
+  --dark-soft:#BDBDBD;    /* dark 대비 9.6:1 */
+  --head:"ES Head","ES Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --sans:"ES Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --wrap:1140px;
+}
+*{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{ margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.75; word-break:keep-all; overflow-x:hidden; }
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; text-decoration:none; }
+h1,h2,h3{ font-family:var(--head); font-weight:700; margin:0; letter-spacing:-.02em; }
+p{ margin:0; }
+.wrap{ width:min(100% - 40px, var(--wrap)); margin:0 auto; }
+:focus-visible{ outline:2px solid var(--red); outline-offset:3px; }
+.num{ font-variant-numeric:tabular-nums; }
+
+/* 장부 라벨: 빨간 네모 도장 + 번호 */
+.label{ display:inline-flex; align-items:center; gap:10px; font-size:.82rem; font-weight:600; letter-spacing:.06em; color:var(--soft); }
+.label::before{ content:""; width:10px; height:10px; background:var(--red); }
+.sec{ padding:76px 0; }
+@media (min-width:900px){ .sec{ padding:110px 0; } }
+.head h2{ font-size:clamp(1.7rem,4.6vw,2.7rem); line-height:1.35; margin-top:16px; }
+.head p{ margin-top:14px; color:var(--soft); max-width:36em; }
+
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:52px; padding:0 22px; border:1.5px solid var(--ink); border-radius:2px; font-weight:600; font-size:.96rem; transition:background .2s ease, color .2s ease, border-color .2s ease; }
+.btn.red{ background:var(--red); border-color:var(--red); color:#fff; }
+.btn small{ font-weight:400; font-size:.8rem; opacity:.85; }
+@media (hover:hover){ .btn:not(.red):hover{ background:var(--ink); color:#fff; } .btn.red:hover{ background:#A31A23; border-color:#A31A23; } }
+
+/* 헤더 */
+.site-head{ position:sticky; top:0; z-index:50; background:rgba(245,245,245,.94); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+.site-head .wrap{ display:flex; align-items:center; justify-content:space-between; height:64px; gap:16px; }
+.site-head .logo img{ height:30px; width:auto; }
+.nav{ display:none; gap:28px; font-size:.92rem; font-weight:500; }
+@media (min-width:900px){ .nav{ display:flex; } }
+@media (hover:hover){ .nav a:hover{ color:var(--red); } }
+.site-head .btn{ min-height:40px; padding:0 14px; font-size:.86rem; }
+
+/* 히어로: 포장 떡 격자 사진을 꽉 채우고 가운데 흰 판에 로고 */
+.hero{ position:relative; min-height:min(88vh,760px); display:grid; place-items:center; padding:48px 20px; overflow:hidden; }
+.hero > img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.hero .plate{ position:relative; background:rgba(255,255,255,.95); border:1.5px solid var(--ink); padding:40px 28px 34px; text-align:center; width:min(100%,600px); }
+.hero .plate img{ width:min(100%,440px); margin:0 auto; }
+.hero h1{ font-size:clamp(1.1rem,2.6vw,1.4rem); font-weight:600; margin-top:26px; line-height:1.6; }
+.hero .items{ margin-top:8px; color:var(--soft); }
+.hero .cta{ display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:26px; }
+.hero .hours{ margin-top:16px; font-size:.86rem; color:var(--soft); }
+
+/* 우리 떡: 주문장 표 */
+.ledger{ margin-top:44px; border-top:2px solid var(--ink); }
+.ledger .row{ display:grid; grid-template-columns:30px 76px 1fr; gap:14px; align-items:center; padding:16px 0; border-bottom:1px solid var(--line); }
+@media (min-width:700px){ .ledger .row{ grid-template-columns:48px 120px 1fr auto; gap:24px; } }
+.ledger .no{ font-weight:700; color:var(--red); font-size:.95rem; }
+.ledger img{ width:100%; aspect-ratio:1/1; object-fit:cover; }
+.ledger h3{ font-size:clamp(1.25rem,2.6vw,1.6rem); }
+.ledger .note{ font-size:.9rem; color:var(--soft); margin-top:2px; }
+.ledger .tag{ display:none; font-size:.8rem; font-weight:600; border:1px solid var(--ink); padding:3px 10px; white-space:nowrap; }
+@media (min-width:700px){ .ledger .tag{ display:inline-block; } }
+.ledger-note{ margin-top:22px; font-size:.9rem; color:var(--soft); }
+
+/* 맞춤 포장 (검정 면) */
+.dark{ background:var(--dark); color:#fff; }
+.dark .label{ color:var(--dark-soft); }
+.dark .head p{ color:var(--dark-soft); }
+.custom-g{ display:grid; grid-template-columns:1fr; gap:14px; margin-top:44px; }
+@media (min-width:600px){ .custom-g{ grid-template-columns:repeat(3,1fr); gap:16px; } }
+.custom-g figure{ margin:0; }
+.custom-g img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+.custom-g figcaption{ margin-top:8px; font-size:.84rem; color:var(--dark-soft); }
+.points{ display:grid; gap:0; margin-top:40px; border-top:1px solid #3A3A3A; }
+@media (min-width:900px){ .points{ grid-template-columns:repeat(3,1fr); } }
+.points div{ padding:22px 0; border-bottom:1px solid #3A3A3A; }
+@media (min-width:900px){ .points div{ padding:24px 24px 24px 0; border-bottom:0; } .points div + div{ padding-left:24px; border-left:1px solid #3A3A3A; } }
+.points b{ display:block; font-family:var(--head); font-size:1.2rem; }
+.points span{ display:block; margin-top:6px; font-size:.9rem; color:var(--dark-soft); }
+
+/* 출고 */
+.ship{ display:grid; gap:30px; }
+@media (min-width:900px){ .ship{ grid-template-columns:1.4fr .6fr; gap:56px; align-items:end; } }
+.ship img{ width:100%; aspect-ratio:16/9; object-fit:cover; }
+.ship .side img{ aspect-ratio:4/5; }
+
+/* 만드는 손 */
+.hands{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:44px; }
+@media (min-width:900px){ .hands{ gap:16px; } }
+.hands img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+
+/* 주문 방법 */
+.steps{ display:grid; gap:12px; margin-top:44px; counter-reset:s; }
+@media (min-width:900px){ .steps{ grid-template-columns:repeat(3,1fr); gap:16px; } }
+.steps > div{ background:var(--paper); border:1.5px solid var(--ink); padding:22px 22px 24px; }
+.steps .n{ font-weight:700; color:var(--red); font-size:.9rem; }
+.steps b{ display:block; font-family:var(--head); font-size:1.25rem; margin-top:8px; }
+.steps span{ display:block; margin-top:6px; color:var(--soft); font-size:.92rem; }
+.call{ margin-top:30px; display:flex; flex-wrap:wrap; align-items:center; gap:14px 22px; }
+.call .tel{ font-family:var(--head); font-size:clamp(1.8rem,5vw,2.6rem); font-weight:700; }
+
+/* 오시는 길 */
+.visit{ display:grid; gap:36px; margin-top:44px; }
+@media (min-width:900px){ .visit{ grid-template-columns:1fr 1fr; gap:56px; } }
+.info{ margin:0; border-top:2px solid var(--ink); }
+.info > div{ display:grid; grid-template-columns:86px 1fr; gap:14px; padding:16px 0; border-bottom:1px solid var(--line); }
+.info dt{ font-weight:700; }
+.info dd{ margin:0; }
+.info dd small{ display:block; color:var(--soft); font-size:.86rem; margin-top:3px; }
+.visit .links{ display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
+.mapframe{ width:100%; height:340px; border:1.5px solid var(--ink); }
+@media (min-width:900px){ .mapframe{ height:100%; min-height:420px; } }
+
+/* 푸터 */
+.foot{ background:var(--dark); color:var(--dark-soft); padding:56px 0 120px; font-size:.86rem; }
+@media (min-width:900px){ .foot{ padding:60px 0; } }
+.foot img{ width:min(70%,280px); margin-bottom:20px; }
+
+/* 모바일 하단 바: 전화(주) · 길찾기 · 인스타 */
+.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:rgba(245,245,245,.97); border-top:1px solid var(--line); }
+.quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border:1.5px solid var(--ink); border-radius:2px; font-size:.88rem; font-weight:600; }
+.quick a.red{ background:var(--red); border-color:var(--red); color:#fff; }
+@media (min-width:900px){ .quick{ display:none; } }
+
+/* 리빌: setInterval 구동 */
+.js .reveal{ opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); transition-delay:var(--d,0s); }
+.js .reveal.in{ opacity:1; transform:none; }
+@media print{ .js .reveal{ opacity:1; transform:none; } }
+</style>
+<noscript><style>.reveal{ opacity:1 !important; transform:none !important; }</style></noscript>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="의신 떡방앗간 처음으로"><img src="es-logo.webp" alt="의신 떡방앗간" width="900" height="224" /></a>
+    <nav class="nav" aria-label="주요 메뉴"><a href="#tteok">우리 떡</a><a href="#custom">맞춤 포장</a><a href="#order">주문 방법</a><a href="#visit">오시는 길</a></nav>
+    <a class="btn red" href="tel:050714066707">전화 주문</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="의신 떡방앗간 소개">
+    <img src="es-hero.webp" alt="막 빚어 판에 가득 쌓인 흰 송편" width="1440" height="810" />
+    <div class="plate reveal">
+      <img src="es-logo.webp" alt="의신 떡방앗간" width="900" height="224" />
+      <h1>전남 진도 의신면의 떡방앗간</h1>
+      <p class="items">송편 · 쑥떡 · 가래떡 · 하나씩 개별 포장</p>
+      <div class="cta">
+        <a class="btn red" href="tel:050714066707">전화 주문 <small class="num">0507-1406-6707</small></a>
+        <a class="btn" href="#visit">오시는 길</a>
+      </div>
+      <p class="hours">월~토 08:00~18:00 · 일요일 휴무</p>
+    </div>
+  </section>
+
+  <section class="sec" id="tteok" aria-labelledby="tteok-h">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label">우리 떡</p>
+        <h2 id="tteok-h">방앗간에서 빚고 쪄내는 떡</h2>
+      </div>
+      <div class="ledger">
+        <div class="row reveal"><span class="no num">01</span><img loading="lazy" src="es-songpyeon.webp" alt="윤기 나는 흰 송편" width="900" height="900" /><div><h3>송편</h3><p class="note">쌀 반죽에 소를 넣어 빚은 송편</p></div><span class="tag">개별 포장 가능</span></div>
+        <div class="row reveal"><span class="no num">02</span><img loading="lazy" src="es-ssuk.webp" alt="무늬를 찍은 초록 쑥떡" width="900" height="900" /><div><h3>쑥떡</h3><p class="note">쑥을 넣어 빚은 초록빛 떡</p></div><span class="tag">개별 포장 가능</span></div>
+        <div class="row reveal"><span class="no num">03</span><img loading="lazy" src="es-garae.webp" alt="한 입 크기로 자른 흰 가래떡" width="810" height="810" /><div><h3>가래떡</h3><p class="note">길게 뽑아 자른 흰 가래떡</p></div><span class="tag">대량 주문</span></div>
+      </div>
+      <p class="ledger-note reveal">개별 · 컵 · 상자 포장은 아래 맞춤 포장에서 확인해 주세요. 가격과 그날 준비되는 떡은 전화로 문의해 주세요.</p>
+    </div>
+  </section>
+
+  <section class="sec dark" id="custom" aria-labelledby="custom-h">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label">맞춤 포장</p>
+        <h2 id="custom-h">행사 이름을 담아<br />하나씩 포장해요</h2>
+        <p>모임 · 행사 · 단체에 나눌 떡을 개별 포장하고, 원하는 문구를 넣은 스티커를 붙여 드려요.</p>
+      </div>
+      <div class="custom-g">
+        <figure class="reveal"><img loading="lazy" src="es-c-box.webp" alt="의신 떡방앗간 스티커를 붙인 상자에 담은 송편" width="800" height="1000" /><figcaption>송편 · 방앗간 스티커 상자</figcaption></figure>
+        <figure class="reveal"><img loading="lazy" src="es-c-pink.webp" alt="꽃 그림 스티커를 붙여 하나씩 포장한 고물 떡" width="800" height="1000" /><figcaption>고물 떡 · 꽃 그림 문구 스티커</figcaption></figure>
+        <figure class="reveal"><img loading="lazy" src="es-c-callig.webp" alt="손글씨 인사말 스티커를 붙여 하나씩 포장한 노란 고물 떡" width="800" height="1000" /><figcaption>노란 고물 떡 · 손글씨 인사 스티커</figcaption></figure>
+      </div>
+      <div class="points reveal">
+        <div><b>개별 포장</b><span>한 개씩 따로 포장해 나눠 드리기 편해요.</span></div>
+        <div><b>문구 스티커</b><span>행사 이름이나 인사말을 스티커로 붙여요.</span></div>
+        <div><b>상자 · 컵 포장</b><span>수량과 쓰임에 맞춰 포장을 골라요.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="ship-h">
+    <div class="wrap ship">
+      <figure class="reveal" style="margin:0"><img loading="lazy" src="es-truck.webp" alt="포장한 떡 상자를 가득 실은 트럭 짐칸과 진도 마을 풍경" width="1400" height="787" /></figure>
+      <div class="side reveal" style="--d:.1s">
+        <p class="label">출고</p>
+        <h2 id="ship-h" style="font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.4;margin-top:16px">진도에서<br />바로 싣고 나갑니다</h2>
+        <p style="margin-top:14px;color:var(--soft)">택배 · 배송은 전화로 문의해 주세요.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="hands-h" style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label">만드는 손</p>
+        <h2 id="hands-h">손으로 빚고, 하나씩 담습니다</h2>
+      </div>
+      <div class="hands">
+        <img class="reveal" loading="lazy" src="es-hand2.webp" alt="장갑 낀 손으로 노란 소를 섞는 모습" width="700" height="875" />
+        <img class="reveal" loading="lazy" src="es-hand1.webp" alt="반으로 가른 송편 속 노란 소" width="700" height="875" />
+        <img class="reveal" loading="lazy" src="es-hand3.webp" alt="장갑 낀 손 위에 올린 흰 송편" width="700" height="875" />
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="order" aria-labelledby="order-h" style="background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label">주문 방법</p>
+        <h2 id="order-h">전화 한 통이면 됩니다</h2>
+      </div>
+      <div class="steps">
+        <div class="reveal"><span class="n num">01</span><b>전화로 말씀해 주세요</b><span>떡 종류 · 수량 · 받으실 날짜</span></div>
+        <div class="reveal"><span class="n num">02</span><b>포장을 정해요</b><span>개별 포장 · 상자 · 컵, 스티커 문구</span></div>
+        <div class="reveal"><span class="n num">03</span><b>찾아가시거나 받으세요</b><span>방앗간 방문 또는 배송</span></div>
+      </div>
+      <div class="call reveal">
+        <a class="tel num" href="tel:050714066707">0507-1406-6707</a>
+        <a class="btn red" href="tel:050714066707">전화 주문하기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label">오시는 길</p>
+        <h2 id="visit-h">진도 의신면 돈지마을</h2>
+      </div>
+      <div class="visit">
+        <div class="reveal">
+          <dl class="info">
+            <div><dt>주소</dt><dd>전남 진도군 의신면 돈지1길 67-1</dd></div>
+            <div><dt>영업시간</dt><dd class="num">월~토 08:00~18:00<small>매주 일요일 정기휴무</small></dd></div>
+            <div><dt>전화</dt><dd><a class="num" href="tel:050714066707">0507-1406-6707</a></dd></div>
+            <div><dt>인스타그램</dt><dd><a href="https://www.instagram.com/dgsb412/" target="_blank" rel="noopener">@dgsb412</a></dd></div>
+          </dl>
+          <div class="links">
+            <a class="btn red" href="tel:050714066707">전화하기</a>
+            <a class="btn" href="https://map.naver.com/p/entry/place/1636324451" target="_blank" rel="noopener">네이버 길찾기</a>
+            <a class="btn" href="https://www.instagram.com/dgsb412/" target="_blank" rel="noopener">인스타그램</a>
+          </div>
+        </div>
+        <iframe class="mapframe reveal" title="의신 떡방앗간 위치 지도" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%EC%A0%84%EB%82%A8%20%EC%A7%84%EB%8F%84%EA%B5%B0%20%EC%9D%98%EC%8B%A0%EB%A9%B4%20%EB%8F%88%EC%A7%801%EA%B8%B8%2067-1&amp;z=16&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="es-logo-light.webp" alt="의신 떡방앗간" width="900" height="224" loading="lazy" />
+    <p>의신 떡방앗간 · 전남 진도군 의신면 돈지1길 67-1 · <span class="num">0507-1406-6707</span><br />월~토 08:00~18:00 · 일요일 휴무 · © 의신 떡방앗간</p>
+  </div>
+</footer>
+
+<div class="quick" aria-label="빠른 연결">
+  <a class="red" href="tel:050714066707">전화 주문</a>
+  <a href="https://map.naver.com/p/entry/place/1636324451" target="_blank" rel="noopener">길찾기</a>
+  <a href="https://www.instagram.com/dgsb412/" target="_blank" rel="noopener">인스타그램</a>
+</div>
+
+<script>
+(function(){
+  var pending=[].slice.call(document.querySelectorAll('.reveal'));
+  pending.forEach(function(el){
+    var sib=[].slice.call(el.parentNode.children).filter(function(c){ return c.classList.contains('reveal'); });
+    if(sib.length>1 && !el.style.getPropertyValue('--d')){ el.style.setProperty('--d',(Math.min(sib.indexOf(el),5)*0.07)+'s'); }
+  });
+  var t=setInterval(function(){
+    if(!pending.length){ clearInterval(t); return; }
+    if(window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4){
+      pending.forEach(function(el){ el.classList.add('in'); }); pending=[]; return;
+    }
+    var line=window.innerHeight*0.92;
+    pending=pending.filter(function(el){
+      if(el.getBoundingClientRect().top < line){ el.classList.add('in'); return false; }
+      return true;
+    });
+  },120);
+  var head=document.querySelector('.site-head');
+  [].forEach.call(document.querySelectorAll('a[href^="#"]'),function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href'); var el=id==='#top'?document.body:document.querySelector(id);
+      if(!el) return; e.preventDefault();
+      var start=window.pageYOffset, end=id==='#top'?0:el.getBoundingClientRect().top+start-head.offsetHeight+1;
+      var t0=Date.now(), dur=520;
+      var iv=setInterval(function(){
+        var p=Math.min((Date.now()-t0)/dur,1), e2=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;
+        window.scrollTo(0,start+(end-start)*e2);
+        if(p>=1) clearInterval(iv);
+      },16);
+    });
+  });
+})();
+</script>
+</body>
+</html>
